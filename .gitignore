@@ -1,0 +1,17 @@
+reports
+venv
+__pycache__
+.idea
+db.sqlite3
+edms/templates
+documents
+# static/
+local.py
+media/
+# migrations/
+.sqlite3
+.history/
+.env
+env
+.code-workspace
+.vscode
