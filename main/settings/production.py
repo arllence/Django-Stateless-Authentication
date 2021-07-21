@@ -22,6 +22,18 @@ DATABASES = {
 
 TOKEN_EXPIRY = int(os.getenv('TOKEN_EXPIRY_TIME'))
 
+SMB_STORAGE_OPTIONS = {
+    "host": os.getenv('SMB_HOST'),
+    "username": os.getenv('SMB_USERNAME'),
+    "password": os.getenv('SMB_PASSWORD'),
+    "server_name": os.getenv('SMB_SERVER_NAME'),
+    "share_name": os.getenv('SMB_SHARE_NAME'),
+    "service_name": os.getenv('SMB_SERVICE_NAME'),
+    "client_machine": os.getenv('SMB_CLIENT_MACHINE'),
+    "file_path": "",
+    "timeout": os.getenv('SMB_TIMEOUT'),
+}
+
 
 if os.getenv('OVER_RIDER') == 'True':
     OVER_RIDE_MODE = True

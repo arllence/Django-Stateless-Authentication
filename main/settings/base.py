@@ -18,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'configuration_manager'
+    'user_manager'
 ]
 
 
@@ -31,7 +31,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'edms.auth_middleware.OneSessionPerUserMiddleware',
 ]
 
 ROOT_URLCONF = 'main.urls'
@@ -79,7 +78,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+AUTH_USER_MODEL = 'user_manager.User'
 LOGIN_REDIRECT_URL = '/portal'
+LOGIN_URL = '/edms/login'
 
 
 
@@ -98,7 +99,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 # App Schema Configurations
-CONFIGURATION_MANAGER_SCHEMA = 'configuration_manager'
+# USER_MANAGER_SCHEMA = 'system_users'
 
 REST_FRAMEWORK = {
     # 'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -135,3 +136,10 @@ CORS_ALLOW_HEADERS = [
 ]
 
 MAINMEDIA = os.getenv('MAINMEDIA')
+
+CUSTOM_PROTOCOL = 'http://'
+API_VERSION = os.getenv('API_VERSION')
+CONFIGURATION_MANAGER_IP = os.getenv('CONFIGURATION_MANAGER_IP')
+DEPARTMENT_DETAIL_VIEW = CUSTOM_PROTOCOL+CONFIGURATION_MANAGER_IP+'/'+API_VERSION+'/'+'department/detail-view?request_id='
+
+
