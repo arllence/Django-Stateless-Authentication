@@ -1,5 +1,6 @@
 # Django-Stateless-Authentication
 **This app uses Jwt tokens to authenticate users**
+_The App uses a custom users model_
 
 ## Uses
 can manage users accross platforms eg:
