@@ -1,4 +1,4 @@
-#!/home/bobkings/Desktop/dev/laptop/edms/master/configuration-manager/venv/bin/python3
+#!/mnt/c/apps/edms3/user-manager/venv/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

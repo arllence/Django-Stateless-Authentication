@@ -2,7 +2,7 @@ import jwt
 from django.contrib.postgres.fields import JSONField
 from django.contrib.auth import authenticate
 from django.http import JsonResponse
-from authentication.models import SystemUser, mobiledevices
+from user_manager.models import SystemUser, mobiledevices
 from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.exceptions import APIException
