@@ -1,5 +1,5 @@
 # Django-Stateless-Authentication
-**This app uses Jwt tokens to authenticate users**
+**This app uses Jwt tokens to authenticate users** <br>
 _The App uses a custom users model_
 
 ## Uses
