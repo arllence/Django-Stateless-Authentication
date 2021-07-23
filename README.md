@@ -10,6 +10,7 @@ can manage users accross platforms eg:
 
 ## Usage
 * Create a venv
+* configure .env file
 * Install requirements
 * run
 
