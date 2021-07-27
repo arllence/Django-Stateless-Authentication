@@ -3,7 +3,7 @@
 _The App uses a custom users model_
 
 ## Uses
-Can manage and autheticate users accross platforms eg:
+Can manage and autheticate users across platforms eg:
 * Web app users
 * Mobile app users
 * Desktop app user
